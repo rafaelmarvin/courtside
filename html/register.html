@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourtSide - Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="/css/global.css">
+    
+</head>
+<body>
+    <img class="background-register" src="/PROJECTLEC/foto/basketball-court-with-people-fan-sport-arena-render-3d-illustration.jpg" alt="">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="../home.html">CourtSide</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Olahraga <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sepakbola</a></li>
+                        <li><a href="#">Basket</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="/html/berita.html" class="nav-link">Berita</a></li>
+                <li class="nav-item"><a href="/html/toko.html" class="nav-link">Toko</a></li>
+                <li class="nav-item"><a href="/html/komunitas.html" class="nav-link">Komunitas</a></li>
+                <li class="nav-item"><a href="/html/aboutus.html" class="nav-link">About Us</a></li>
+            </ul>
+            <div class="auth">
+                <a href="register.html" class="btn-register">Register</a>
+                <!-- Will be replaced with profile icon after login -->
+                <!-- <a href="#" class="profile-icon"><i class="fas fa-user"></i></a> -->
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="register-container">
+            <div class="register-header">
+                <h2>Buat Akun Baru</h2>
+                <p>Sudah punya akun? <a href="login.html">Login disini</a></p>
+            </div>
+            
+            <form id="registerForm" class="register-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap">
+                    <span class="error-message" id="name-error">Nama lengkap harus diisi</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email">
+                    <span class="error-message" id="email-error">Email harus valid</span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="gender-group">
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Laki-laki</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <span class="error-message" id="gender-error">Pilih jenis kelamin</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password">
+                    <span class="error-message" id="password-error">Password minimal 8 karakter</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="repassword">Konfirmasi Password</label>
+                    <input type="password" id="repassword" name="repassword" placeholder="Masukkan password lagi">
+                    <span class="error-message" id="repassword-error">Password tidak cocok</span>
+                </div>
+                
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Saya menyetujui <a href="#">Syarat dan Ketentuan</a> serta <a href="#">Kebijakan Privasi</a></label>
+                </div>
+                <span class="error-message" id="terms-error">Anda harus menyetujui syarat dan ketentuan</span>
+                
+                <button type="submit" class="btn-register">Daftar Sekarang</button>
+            </form>
+        </div>
+    </section>
+    <script src="/js/register.js"></script>
+</body>
+</html>
