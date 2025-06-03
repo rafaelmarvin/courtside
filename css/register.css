@@ -1,31 +1,4 @@
 
-        /* Global Styles */
-        :root {
-            --maroon: #800000;
-            --dark-maroon: #500000;
-            --light-maroon: #a04040;
-            --white: #ffffff;
-            --light-gray: #f5f5f5;
-            --dark-gray: #333333;
-            --gray: #777777;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--light-gray);
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
         /* Register Section */
         .register-section {
             padding: 60px 0;
@@ -149,6 +122,10 @@
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            a {
+                text-decoration: none;
+                justify-content: center;
+            }
         }
 
         .btn-register:hover {

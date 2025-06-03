@@ -1,0 +1,243 @@
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 40px 20px;
+    background-color: var(--light-gray);
+}
+
+.login-container {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    color: var(--maroon);
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.login-header p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.login-header a {
+    color: var(--maroon);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.login-header a:hover {
+    color: var(--dark-maroon);
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    font-size: 14px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.login-form input:focus {
+    border-color: var(--maroon);
+    outline: none;
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(139, 38, 53, 0.1);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--gray);
+}
+
+.remember-me input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.forgot-password {
+    color: var(--maroon);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: var(--dark-maroon);
+    text-decoration: underline;
+}
+
+/* Login Form Button (different from navbar button) */
+.login-form .btn-login {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, var(--maroon), var(--dark-maroon));
+    color: var(--white);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-form .btn-login:hover {
+    background: linear-gradient(135deg, var(--dark-maroon), var(--maroon));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 38, 53, 0.3);
+    color: var(--white);
+}
+
+.login-form .btn-login:active {
+    transform: translateY(0);
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.divider span {
+    background: var(--white);
+    padding: 0 15px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--dark-gray);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-social:hover {
+    border-color: var(--maroon);
+    background: #fafafa;
+    transform: translateY(-1px);
+}
+
+.btn-social.google:hover {
+    border-color: #db4437;
+    color: #db4437;
+}
+
+.btn-social.facebook:hover {
+    border-color: #4267B2;
+    color: #4267B2;
+}
+
+/* Responsive Styles for Login Form */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 25px;
+        margin: 20px;
+    }
+    
+    .login-header h2 {
+        font-size: 24px;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px 20px;
+    }
+    
+    .social-login {
+        gap: 10px;
+    }
+    
+    .btn-social {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

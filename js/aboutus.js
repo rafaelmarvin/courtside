@@ -51,3 +51,4 @@
             stars.forEach(star => star.classList.remove('active'));
             ratingInput.value = '0';
         });
+    
